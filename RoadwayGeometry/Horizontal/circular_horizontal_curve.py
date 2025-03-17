@@ -6,6 +6,14 @@ from BridgeMath.num_compare import effectively_equal
 
 
 class CircularHorizontalCurve:
+    '''
+    Circular Horizontal Curve class that represents a horizontal curve in a roadway
+    :param pi_sta: PI station
+    :param angle_in: Angle of the curve at the beginning
+    :param angle_out: Angle of the curve at the end
+    :param degree_of_curvature: Degree
+    
+    '''
     def __init__(self, pi_sta: float, angle_in: DirectionAngle, angle_out: DirectionAngle,
                  degree_of_curvature: float):
         self.pi_station = pi_sta
